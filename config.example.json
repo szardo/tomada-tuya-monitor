@@ -1,0 +1,20 @@
+{
+  "_comentario": "Copie este arquivo para config.json e preencha com os dados da SUA tomada. Veja o README (seção 'Pegando os dados no Tuya IoT') para saber onde encontrar cada campo. Nunca faça commit do config.json de verdade.",
+
+  "device_id": "COLOQUE_AQUI_O_DEVICE_ID",
+  "device_mac": "AA:BB:CC:DD:EE:FF",
+  "local_key": "COLOQUE_AQUI_O_LOCAL_KEY",
+  "protocol_version": 3.5,
+
+  "_comentario_subnet": "Faixa de IP da sua rede local, usada para descobrir o IP atual da tomada pelo MAC (o IP muda por DHCP).",
+  "subnet": "192.168.1.0/24",
+
+  "timezone": "America/Sao_Paulo",
+
+  "db": {
+    "host": "localhost",
+    "user": "tomada_user",
+    "password": "COLOQUE_AQUI_A_SENHA_DO_BANCO",
+    "database": "tomada_db"
+  }
+}

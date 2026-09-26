@@ -1,0 +1,19 @@
+# Configurações com dados sensíveis (local_key, senhas) — NUNCA publicar
+config.json
+web/config.php
+
+# Arquivos gerados pelo "python -m tinytuya wizard" (contêm a local_key)
+devices.json
+tuya-raw.json
+tinytuya.json
+snapshot.json
+
+# Estado e logs do coletor
+tomada_state.json
+*.log
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
