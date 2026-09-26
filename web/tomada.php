@@ -24,7 +24,8 @@ function fmtEn($k) {
 }
 function h($s) { return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
 function delta($atual, $ant, $inv = false) {
-    if (!$ant) return '<span class="text-slate-400">sem base de comparação</span>';
+    $atual = (float)$atual; $ant = (float)$ant; // valores do banco chegam como texto ("0.0000" é truthy em PHP)
+    if ($ant == 0) return '<span class="text-slate-400">sem base de comparação</span>';
     $p = ($atual - $ant) / $ant * 100;
     $bom = $inv ? $p <= 0 : $p >= 0;
     $cls = $bom ? 'text-emerald-600' : 'text-rose-600';
