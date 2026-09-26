@@ -161,7 +161,7 @@ O wizard gera um arquivo **`devices.json`**. Procure a sua tomada nele:
 }
 ```
 
-> 🔒 O `devices.json` contém a chave de acesso da tomada. **Não publique esse arquivo** (ele já está no `.gitignore`).
+> 🔒 O `devices.json` contém a chave de acesso da tomada. **Não publique esse arquivo**.
 
 > ℹ️ O teste gratuito do *IoT Core* da Tuya expira depois de um tempo. **Isso não afeta o coletor**, que usa só a rede local. Você só precisaria da plataforma de novo se **recadastrar a tomada** (resetar/trocar o Wi-Fi), porque isso gera uma `local_key` nova. Para tomadas novas na mesma conta, basta rodar o wizard de novo: o projeto e o vínculo já estão feitos.
 
